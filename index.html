@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Church</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Navigation -->
+  <nav class="bg-white shadow p-4 fixed top-0 left-0 right-0 z-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="text-2xl font-bold text-blue-600">My Church</div>
+      <div class="space-x-4">
+        <a href="#about" class="text-gray-600 hover:text-blue-600">About</a>
+        <a href="#events" class="text-gray-600 hover:text-blue-600">Events</a>
+        <a href="#watch" class="text-gray-600 hover:text-blue-600">Watch</a>
+        <a href="#contact" class="text-gray-600 hover:text-blue-600">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="text-center p-24 bg-gradient-to-r from-blue-500 to-purple-600 text-white mt-16" data-aos="fade-up">
+    <h1 class="text-5xl font-bold mb-6">Welcome to Our Community</h1>
+    <p class="mb-8 text-xl">Join us every Sunday at 10 AM – All are welcome!</p>
+    <a href="#about" class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-200 transition">
+      Learn More
+    </a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="p-12 bg-white" data-aos="fade-up">
+    <h2 class="text-4xl font-bold text-center mb-6">About Us</h2>
+    <p class="max-w-2xl mx-auto text-center text-lg text-gray-600">
+      We are a vibrant community focused on faith, family, and serving others. Whether you're exploring faith for the first time or looking for a new church home, we're here to welcome you with open arms.
+    </p>
+  </section>
+
+  <!-- Events Section -->
+  <section id="events" class="p-12 bg-gray-50" data-aos="fade-up">
+    <h2 class="text-4xl font-bold text-center mb-8">Upcoming Events</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+      <div class="p-6 bg-white rounded shadow">
+        <h3 class="text-2xl font-semibold mb-2">Youth Gathering</h3>
+        <p class="mb-4 text-gray-600">Friday, May 17th at 6 PM</p>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Details</button>
+      </div>
+      <div class="p-6 bg-white rounded shadow">
+        <h3 class="text-2xl font-semibold mb-2">Community Outreach</h3>
+        <p class="mb-4 text-gray-600">Saturday, May 25th at 9 AM</p>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Join Us</button>
+      </div>
+      <div class="p-6 bg-white rounded shadow">
+        <h3 class="text-2xl font-semibold mb-2">Sunday Service</h3>
+        <p class="mb-4 text-gray-600">Every Sunday at 10 AM</p>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Attend</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Watch Section -->
+  <section id="watch" class="p-12 bg-white" data-aos="fade-up">
+    <h2 class="text-4xl font-bold text-center mb-8">Watch a Recent Message</h2>
+    <div class="flex justify-center">
+      <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen 
+        class="rounded shadow-lg">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="p-12 bg-gray-50" data-aos="fade-up">
+    <h2 class="text-4xl font-bold text-center mb-8">Contact Us</h2>
+    <form class="max-w-md mx-auto space-y-4">
+      <input type="text" placeholder="Name" class="w-full p-3 border rounded" />
+      <input type="email" placeholder="Email" class="w-full p-3 border rounded" />
+      <textarea placeholder="Message" class="w-full p-3 border rounded h-32"></textarea>
+      <button class="w-full bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Send Message</button>
+    </form>
+  </section>
+
+  <footer class="p-6 bg-white text-center text-gray-600">
+    &copy; 2025 My Church. All rights reserved.
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
