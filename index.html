@@ -23,13 +23,33 @@
   </nav>
 
   <!-- Hero Section -->
-  <section class="text-center p-24 bg-gradient-to-r from-blue-500 to-yellow-600 text-white mt-16" data-aos="fade-up">
+<section class="text-center p-24 bg-gradient-to-r from-blue-500 via-yellow-300 to-yellow-400 text-white mt-16 animate-gradient" data-aos="fade-up">
     <h1 class="text-5xl font-bold mb-6">Mirë se Erdhe!</h1>
     <p class="mb-8 text-xl">Behu pjesë e takimeve tona të Kishës çdo të Diel në orën 17:00! </p>
     <a href="#about" class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-200 transition">
       Learn More
     </a>
   </section>
+
+  <style>
+  @keyframes gradientShift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .animate-gradient {
+    background: linear-gradient(-45deg, #3b82f6, #facc15, #fde047, #3b82f6);
+    background-size: 300% 300%;
+    animation: gradientShift 10s ease infinite;
+  }
+</style>
 
   <!-- About Section -->
 <section id="about" class="p-12 bg-white" data-aos="fade-up">
