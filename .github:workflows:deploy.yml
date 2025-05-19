@@ -3,7 +3,7 @@ name: Deploy Eleventy to GitHub Pages
 on:
   push:
     branches: [ master ]  # or "main" if that's your branch
-
+  workflow_dispatch:  # allows manual deploy trigger
 jobs:
   build:
     runs-on: ubuntu-latest
