@@ -15,6 +15,7 @@
   },
   "scripts": {
   "build": "eleventy",
-  "serve": "eleventy --serve"
+  "serve": "eleventy --serve",
+  "deploy": "./deploy.sh"
   }
 }
