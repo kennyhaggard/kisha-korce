@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zbulo Më Shumë</title>
+  <title>Kontakt</title>
 
   <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -34,20 +34,27 @@
 
   <main class="mt-24">
     
-<section class="text-center p-24 bg-yellow-300 text-gray-900 mt-16">
-  <h1 class="text-5xl font-bold mb-6">Nuk je rastësisht këtu</h1>
-  <p class="text-xl">Je i thirrur për më shumë.</p>
-</section>
+<section class="mt-16 px-6 py-10 max-w-4xl mx-auto text-gray-800">
+  <h1 class="text-4xl font-bold text-center mb-8">Na Kontaktoni</h1>
 
-<section class="p-12 bg-white max-w-3xl mx-auto text-lg text-gray-700">
-  <p class="mb-4">
-    Zoti të ka krijuar me një qëllim dhe një vend të posaçëm në zemrën e Tij.
-    Në kishën tonë, ti nuk je thjesht një vizitor, je një njeri i çmuar që mirëpritet si pjesë e familjes.
+  <p class="text-lg text-center mb-8 max-w-2xl mx-auto">
+    Nëse keni pyetje, kërkesa për lutje, ose doni të lidheni me ne për ndonjë arsye tjetër, ju lutemi plotësoni formularin më poshtë. Ne do të përgjigjemi sa më shpejt që të jetë e mundur.
   </p>
-  <p>
-    Eja këtë të Diel për të përjetuar dashurinë e Perëndisë, fuqinë e pranisë së Tij dhe shpresën që i jep kuptim jetës.
-    Ka gjithmonë një vend për ty në shtëpinë e Zotit!
-  </p>
+
+  <form action="https://formsubmit.co/fjalaejeteskorce@gmail.com" method="POST" class="space-y-4 max-w-lg mx-auto">
+    <input type="text" name="name" placeholder="Emri juaj" required class="w-full p-3 border border-gray-300 rounded" />
+
+    <input type="email" name="email" placeholder="Email-i juaj" required class="w-full p-3 border border-gray-300 rounded" />
+
+    <textarea name="message" placeholder="Mesazhi juaj" required class="w-full p-3 border border-gray-300 rounded h-32"></textarea>
+
+    <!-- Optional: spam protection and redirect -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://fjalaejeteskorce.org/faleminderit/">
+    <input type="hidden" name="_subject" value="Mesazh i ri nga faqja e kishës">
+
+    <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Dërgo</button>
+  </form>
 </section>
   </main>
 
