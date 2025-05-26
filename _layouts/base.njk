@@ -18,5 +18,21 @@
 
   {% include "footer.njk" %}
 
+<script>
+  const menu = document.getElementById('menu');
+  const toggle = document.getElementById('menu-toggle');
+  const overlay = document.getElementById('overlay');
+
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('translate-x-full');
+    overlay.classList.toggle('hidden');
+  });
+
+  overlay.addEventListener('click', () => {
+    menu.classList.add('translate-x-full');
+    overlay.classList.add('hidden');
+  });
+</script>
+
 </body>
 </html>
