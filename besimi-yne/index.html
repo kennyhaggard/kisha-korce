@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vizioni dhe Misioni i Kishës</title>
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <nav class="bg-white shadow p-4 fixed top-0 left-0 right-0 z-50">
+  <div class="container mx-auto flex justify-between items-center">
+    <!-- Logo -->
+    <a href="/" class="flex items-center space-x-3">
+      <img src="/images/logon.png" alt="Church Logo" class="h-10 w-10 object-contain" />
+      <span class="text-2xl font-bold text-blue-600">Kisha Fjala e Jetës Korçë</span>
+    </a>
+
+    <!-- Desktop Nav -->
+    <div class="hidden md:flex space-x-6">
+      <a href="/besimi-yne/" class="text-gray-600 hover:text-blue-600">Besimi Ynë</a>
+      <a href="/#about" class="text-gray-600 hover:text-blue-600">Shërbesat</a>
+      <a href="/kontakt/" class="text-gray-600 hover:text-blue-600">Kontakt</a>
+    </div>
+
+    <!-- Hamburger Button (Mobile Only) -->
+    <button id="menu-toggle" class="md:hidden text-gray-600 focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Slide-In Menu -->
+  <div id="menu" class="fixed top-0 right-0 w-64 h-full bg-white shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out z-40 md:hidden">
+    <div class="flex flex-col p-6 space-y-4">
+      <a href="/besimi-yne/" class="text-gray-600 hover:text-blue-600">Besimi Ynë</a>
+      <a href="/#about" class="text-gray-600 hover:text-blue-600">Shërbesat</a>
+      <a href="/kontakt/" class="text-gray-600 hover:text-blue-600">Kontakt</a>
+    </div>
+  </div>
+
+  <!-- Mobile Overlay -->
+  <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-30 md:hidden"></div>
+</nav>
+
+  <main class="mt-24">
+    
+<section class="mt-16 px-6 py-10 max-w-4xl mx-auto text-gray-800">
+  <h1 class="text-4xl font-bold mb-6 text-center">Vizioni dhe Misioni i Kishës</h1>
+
+  <h2 id="vizioni" class="text-2xl font-semibold mt-8 mb-2">Vizioni</h2>
+  <p class="mb-4">Vizioni ynë bazohet mbi atë urdhërim që vetë Jezusi u dha dishepujve të vet kur Ai ishte ende mes tyre.</p>
+  <blockquote class="border-l-4 pl-4 italic text-gray-600 mb-6">
+    “Shkoni, pra, dhe bëni dishepuj nga të gjithë popujt duke i pagëzuar në emër të Atit e të Birit e të Frymës së Shenjtë, dhe duke i mësuar të zbatojnë të gjitha gjërat që unë ju kam urdhëruar. Dhe ja, unë jam me ju gjithë ditët, deri në mbarim të botës. Amen.”<br>
+    <span class="block text-sm text-right">Mateu 28:19-20</span>
+  </blockquote>
+
+  <h3 class="text-xl font-semibold mt-6">Vizioni i zgjeruar</h3>
+  <p class="mt-2 font-semibold">Marrëdhënie të ngushtë me Perëndinë</p>
+  <p class="mb-4">Zoti dëshiron që të ketë një marrëdhënie të ngushtë personale me ne. <em>(Marku 1:35)</em></p>
+
+  <p class="font-semibold">Marrëdhënie me të tjerët</p>
+  <p class="mb-4">Jemi bërë që të kemi miqësi, të jetojmë me të tjerët. <em>(Gjoni 13:35)</em></p>
+
+  <p class="font-semibold">Shpërndarja e Ungjillit</p>
+  <p class="mb-4">Ne ndajmë ungjillin e lirisë. <em>(Mateu 28:19-20)</em></p>
+
+  <h2 id="misioni" class="text-2xl font-semibold mt-8 mb-2">Misioni Ynë</h2>
+  <p class="mb-4">Misioni ynë është të bëjmë dishepuj për Jezusin që ata të bëjnë dishepuj të tjerë. Ne jemi një grup besimtarësh të krishterë që ecim së bashku në një udhëtim me Perëndinë. Ne mësojmë dhe kuptojmë se kush është Jezusi. Njohim Fjalën e Tij dhe e zbatojmë atë në jetën tonë të përditshme. Qëllimi ynë është të ndihmojmë sa më shumë njerëz të njohin Atë dhe të kenë një jetë në fitore me anë të besimit në Zotin Jezus Krisht.</p>
+
+  <h2 id="kredo" class="text-2xl font-semibold mt-8 mb-2">Kredoja jonë e besimit</h2>
+
+  <h3 class="text-xl font-semibold mt-6">Bibla</h3>
+  <p class="mb-4">Bibla është e vetmja Fjalë e Perëndisë dhe është plotësisht e mjaftueshme për jetën. Ne e pranojmë Biblën si burimin e së Vërtetës, si një udhëzues të pagabueshëm në të gjitha gjërat në lidhje me doktrinën dhe praktikën e besimit. <em>(2 Pjetrit 1:20-21, 1 Thesalonikasve 2:13, 2 Timoteut 3:16, 2 Timoteut 1:13, Psalm 119:105,160, Psalm 12:6, Fjalët e Urta 30:5)</em></p>
+
+  <h3 class="text-xl font-semibold mt-6">Perëndia</h3>
+  <p class="mb-4">Zoti është krijuesi dhe sunduesi i gjithësisë. Ai ka ekzistuar përjetësisht në tre persona: Ati, Biri dhe Fryma e Shenjtë. Të tre janë të barabartë në natyrën e tyre hyjnore, janë shfaqur në role të ndryshme dhe janë një Zot i vetëm. <em>(Mateu 28:19, 3:16-17, Zanafilla 1:1,26,27, Psalm 90:2, 1 Pjetri 1:2, 2 Korintasve 13:13)</em></p>
+
+  <h3 class="text-xl font-semibold mt-6">Njeriu</h3>
+  <p class="mb-4">
+    Njerëzit janë krijuar sipas shëmbëlltyrës së Zotit. <em>(Zanafilla 1:27)</em><br>
+    Vdekja dhe mëkati hynë në botë pas mëkatit të Adamit dhe Evës. <em>(Romakëve 5:12)</em><br>
+    Përmes përpjekjeve tona, ne nuk mund të jemi të drejtë para Zotit. <em>(Romakëve 3:20)</em><br>
+    Të gjithë ne varemi nga hiri i Zotit që na u dha përmes vdekjes së Krishtit. <em>(Galatasve 2:21)</em><br>
+    Pasi marrim shpëtimin, ne do të rritemi dhe do të bëhemi më shumë si Jezusi. <em>(Romakëve 8:29)</em>
+  </p>
+
+  <h3 class="text-xl font-semibold mt-6">Shpëtimi</h3>
+  <p class="mb-4">
+    Sepse është me anë të hirit që ju keni shpëtuar, përmes besimit. <em>(Efesianëve 2:8)</em><br>
+    Ne shpëtojmë me anë të hirit përmes besimit, jo përmes veprave tona. <em>(Efesianëve 2:8-9)</em><br>
+    Një besim i gjallë shprehet duke rrëfyer se Jezusi është Zot, duke u penduar për mëkatin dhe duke u pagëzuar. <em>(Romakëve 10:9-10, Veprat 2:38)</em>
+  </p>
+
+  <h3 class="text-xl font-semibold mt-6">Pagëzimi</h3>
+  <p class="mb-4">
+    Pagëzimi kryhet si bindje ndaj Fjalës së Zotit dhe është një veprim pas shpëtimit tashmë të marrë me anë të besimit. Pagëzimi dëshmon publikisht besimin e besimtarit dhe lënien e jetës së vjetër dhe fillimin e një jete të re duke i shërbyer Krishtit. Praktikohet duke u zhytur në ujë në emër të Atit, Birit dhe Frymës së Shenjtë. <em>(Mateu 28:19, Veprat 8:36, Kolosianëve 2:12)</em>
+  </p>
+
+  <h3 class="text-xl font-semibold mt-6">Kisha</h3>
+  <p class="mb-4">
+    Kisha është trupi i Krishtit. Një marrëdhënie me Jezu Krishtin bën që të gjithë besimtarët të bëhen anëtarë të trupit të Tij, kishës. Ekziston një kishë e vërtetë universale, e përbërë nga të gjithë ata që e pranojnë Jezus Krishtin si Shpëtimtar dhe Zot.<br>
+    Qëllimi i kishës:
+  </p>
+  <ol class="list-decimal list-inside mb-4">
+    <li>Mësimi i doktrinës biblike</li>
+    <li>Sigurimi i një vendi miqësie për besimtarët</li>
+    <li>Respektimi i darkës së Zotit</li>
+    <li>Lutja</li>
+    <li> Anëtarët e trupit të Krishtit zhvillojnë dhe përdorin talentet dhe dhuratat nga Zoti. Nën mbrojtjen dhe mbikëqyrjen e drejtuesave të kishës, anëtarët e saj do të punojnë së bashku në dashuri dhe unitet, me qëllim përfundimtar lavdërimin e Krishtit dhe bërjen e dishepujve nga të gjitha kombet.</li>
+  </ol>
+  <p class="mb-4"><em>(Veprat 2:42-47, Efesianëve 4:1-16, Mateu 28:19-20, Veprat 20:28)</em></p>
+
+  <h3 class="text-xl font-semibold mt-6">Darka e Zotit</h3>
+  <p class="mb-4">
+    Përkujtojmë vdekjen e Krishtit derisa Ai të vijë. Kjo është një praktikë biblike edhe e dobishme për kishën. <em>(1 Korintasve 11:23-26, Veprat 20:7)</em>
+  </p>
+</section>
+
+  </main>
+
+  <footer class="bg-white border-t mt-12 text-gray-700">
+  <div class="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+
+    <!-- Logo -->
+    <div class="flex flex-col items-center">
+      <img src="/images/logon.png" alt="Church Logo" class="h-48 w-auto mb-4 mx-auto" />
+    </div>
+
+    <!-- Church Services Info -->
+    <div>
+      <p class="text-base font-semibold mb-2 text-center md:text-left">Shërbesat e kishës në Korçë</p>
+      <ul class="space-y-1 text-sm text-center md:text-left">
+        <li>Takimi i kishës – çdo të Diel në orën 17:00</li>
+        <li>Takimi i fëmijëve – çdo të Diel në orën 17:30</li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div>
+      <p class="text-base font-semibold mb-2 text-center md:text-left">Kontakt</p>
+      <ul class="space-y-1 text-sm text-center md:text-left">
+        <li><strong>Adresa:</strong> Lagjja 15; Rruga “Kristaq Prifti”, tek Pastiçeri Tasho, Kati i 2-të</li>
+        <li><strong>Email:</strong> <a href="mailto:fjalaejeteskorce@gmail.com" class="text-blue-600 hover:underline">fjalaejeteskorce@gmail.com</a></li>
+        <li><strong>Tel:</strong> <a href="tel:+355693915900" class="text-blue-600 hover:underline">+355 69 39 15 900</a></li>
+        <li><strong>PoBox:</strong> 16, Korçë, Albania</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="text-center text-xs text-gray-400 pb-6">
+    &copy; 2025 Kisha Fjala e Jetës Korçë. Të gjitha të drejtat e rezervuara.
+  </div>
+</footer>
+
+<script>
+  const menu = document.getElementById('menu');
+  const toggle = document.getElementById('menu-toggle');
+  const overlay = document.getElementById('overlay');
+
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('translate-x-full');
+    overlay.classList.toggle('hidden');
+  });
+
+  overlay.addEventListener('click', () => {
+    menu.classList.add('translate-x-full');
+    overlay.classList.add('hidden');
+  });
+</script>
+
+</body>
+</html>
